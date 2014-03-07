@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 8ae3e6eb95bdecb41aac75c84c3fe71b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: body1
+    100002: ikHandle5
+    100004: ikHandle5 1
+    100006: ikHandle6
+    100008: ikHandle6 1
+    100010: joint11
+    100012: joint11 1
+    100014: joint13
+    100016: joint13 1
+    100018: joint15
+    100020: joint19
+    100022: joint19 1
+    100024: LF_AnkleJNT
+    100026: LF_Elbow_JNT
+    100028: LF_Hip_JNT
+    100030: LF_Knee_JNT
+    100032: LF_Palm_JNT
+    100034: LF_Shoulder_JNT
+    100036: LF_Thumb_JNT
+    100038: LfFoot
+    100040: Neck_JNT
+    100042: //RootNode
+    100044: Root
+    100046: RT_AnkleJNT
+    100048: RT_Elbow_JNT
+    100050: RT_Hip_JNT
+    100052: RT_Knee_JNT
+    100054: RT_Palm_JNT
+    100056: RT_Shoulder_JNT
+    100058: RT_Thumb_JNT
+    100060: Rt_Wrist_JNT
+    100062: Rt_Wrist_JNT 1
+    100064: RTFoot
+    100066: rtpole
+    100068: rtpole1
+    100070: SPINE_JNT01
+    100072: SPINE_JNT02
+    100074: SPINE_JNT03
+    100076: Waist_JNT
+    100078: WaistCTRL
+    400000: body1
+    400002: ikHandle5
+    400004: ikHandle5 1
+    400006: ikHandle6
+    400008: ikHandle6 1
+    400010: joint11
+    400012: joint11 1
+    400014: joint13
+    400016: joint13 1
+    400018: joint15
+    400020: joint19
+    400022: joint19 1
+    400024: LF_AnkleJNT
+    400026: LF_Elbow_JNT
+    400028: LF_Hip_JNT
+    400030: LF_Knee_JNT
+    400032: LF_Palm_JNT
+    400034: LF_Shoulder_JNT
+    400036: LF_Thumb_JNT
+    400038: LfFoot
+    400040: Neck_JNT
+    400042: //RootNode
+    400044: Root
+    400046: RT_AnkleJNT
+    400048: RT_Elbow_JNT
+    400050: RT_Hip_JNT
+    400052: RT_Knee_JNT
+    400054: RT_Palm_JNT
+    400056: RT_Shoulder_JNT
+    400058: RT_Thumb_JNT
+    400060: Rt_Wrist_JNT
+    400062: Rt_Wrist_JNT 1
+    400064: RTFoot
+    400066: rtpole
+    400068: rtpole1
+    400070: SPINE_JNT01
+    400072: SPINE_JNT02
+    400074: SPINE_JNT03
+    400076: Waist_JNT
+    400078: WaistCTRL
+    4300000: body1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: -33
+      lastFrame: 398
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/LfFoot
+        weight: 1
+      - path: Root/LfFoot/ikHandle5
+        weight: 1
+      - path: Root/LfFoot/ikHandle6
+        weight: 1
+      - path: Root/RTFoot
+        weight: 1
+      - path: Root/RTFoot/ikHandle5 1
+        weight: 1
+      - path: Root/RTFoot/ikHandle6 1
+        weight: 1
+      - path: Root/rtpole
+        weight: 1
+      - path: Root/rtpole1
+        weight: 1
+      - path: Root/Waist_JNT
+        weight: 1
+      - path: Root/Waist_JNT/LF_Hip_JNT
+        weight: 1
+      - path: Root/Waist_JNT/LF_Hip_JNT/LF_Knee_JNT
+        weight: 1
+      - path: Root/Waist_JNT/LF_Hip_JNT/LF_Knee_JNT/LF_AnkleJNT
+        weight: 1
+      - path: Root/Waist_JNT/LF_Hip_JNT/LF_Knee_JNT/LF_AnkleJNT/joint19
+        weight: 1
+      - path: Root/Waist_JNT/RT_Hip_JNT
+        weight: 1
+      - path: Root/Waist_JNT/RT_Hip_JNT/RT_Knee_JNT
+        weight: 1
+      - path: Root/Waist_JNT/RT_Hip_JNT/RT_Knee_JNT/RT_AnkleJNT
+        weight: 1
+      - path: Root/Waist_JNT/RT_Hip_JNT/RT_Knee_JNT/RT_AnkleJNT/joint19 1
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/LF_Shoulder_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/LF_Shoulder_JNT/LF_Elbow_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/LF_Shoulder_JNT/LF_Elbow_JNT/Rt_Wrist_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/LF_Shoulder_JNT/LF_Elbow_JNT/Rt_Wrist_JNT/LF_Palm_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/LF_Shoulder_JNT/LF_Elbow_JNT/Rt_Wrist_JNT/LF_Palm_JNT/joint11
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/LF_Shoulder_JNT/LF_Elbow_JNT/Rt_Wrist_JNT/LF_Thumb_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/LF_Shoulder_JNT/LF_Elbow_JNT/Rt_Wrist_JNT/LF_Thumb_JNT/joint13
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/Neck_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/Neck_JNT/joint15
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/RT_Shoulder_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/RT_Shoulder_JNT/RT_Elbow_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/RT_Shoulder_JNT/RT_Elbow_JNT/Rt_Wrist_JNT
+          1
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/RT_Shoulder_JNT/RT_Elbow_JNT/Rt_Wrist_JNT
+          1/RT_Palm_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/RT_Shoulder_JNT/RT_Elbow_JNT/Rt_Wrist_JNT
+          1/RT_Palm_JNT/joint11 1
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/RT_Shoulder_JNT/RT_Elbow_JNT/Rt_Wrist_JNT
+          1/RT_Thumb_JNT
+        weight: 1
+      - path: Root/Waist_JNT/SPINE_JNT01/SPINE_JNT02/SPINE_JNT03/RT_Shoulder_JNT/RT_Elbow_JNT/Rt_Wrist_JNT
+          1/RT_Thumb_JNT/joint13 1
+        weight: 1
+      - path: Root/WaistCTRL
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Root
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
