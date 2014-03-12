@@ -1,14 +1,28 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player\Scripts\PlayerCTRL.cs">
+    <Files>
+      <File FileName="Assets\Player\Scripts\PlayerCTRL.cs" Line="73" Column="3" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" />
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Player" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerCTRL.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Neil\Documents\GitHub\Charlesthecat\Project\Assets\Player\Scripts\PlayerCTRL.cs" line="101" />
+      <Breakpoint file="C:\Users\Neil\Documents\GitHub\Charlesthecat\Project\Assets\Player\Scripts\PlayerCTRL.cs" line="73" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

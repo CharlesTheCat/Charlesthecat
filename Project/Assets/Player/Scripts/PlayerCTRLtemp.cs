@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-	public class Player_CTRLtemp : MonoBehaviour {
+	public class PlayerCTRLtemp : MonoBehaviour {
    public static bool    PlayerIsGrounded;
 	public static Vector3 PlayerTransformPostion;
 	public float turnSpeed = 6.0F;
@@ -15,7 +15,7 @@ using System.Collections;
     public CharacterController controller;
 	
 	void Start(){
-		 controller = GetComponent<CharacterController>();
+		 //controller = GetComponent<CharacterController>();
 	
 	}
 	

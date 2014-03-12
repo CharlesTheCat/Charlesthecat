@@ -5,22 +5,28 @@ using System.Collections;
 
 public class PlayerCTRL : MonoBehaviour {
 	int jumpHash = Animator.StringToHash("Jump");
-	public float JumpSpeed = 100;
-	public float PlayerSpeed = 10;
+	public float JumpSpeed = 5;
+	public float MoveSpeed = 10;
 	public float RotationSpeed = 200;
 	private Vector3 Move = Vector3.zero;
-	public float Gravity = 10;
+	public float Gravity = 30;
 	//public float AnimMove;
 	protected bool jump;
 	public float VerticalMove;
-
+	private Vector3 moveDirection = Vector3.zero;
 	CharacterController CharacterCTRL;
 	Animator anim;
-	
+
+	private float Vertical;
+	private float Horizontal;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
 		
+
+
+
 		CharacterCTRL =GetComponent<CharacterController>();	
 		
 	}
@@ -28,7 +34,16 @@ public class PlayerCTRL : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Grabing keyboard inputs 
+		Vertical = Input.GetAxis("Vertical");
+		Horizontal = Input.GetAxis("Horizontal");
 
+		//collects vertical and forward motion into a vector
+		moveDirection = new Vector3(0,VerticalMove,MoveSpeed * Vertical);
+		//I'm still confused how this works, but it does and it eats me up inside
+		moveDirection = transform.TransformDirection(moveDirection);
+
+		transform.Rotate(0,Input.GetAxis("Horizontal") * RotationSpeed * Time.deltaTime,0);
 
 
 		if (Input.GetButton("Jump"))
@@ -70,19 +85,19 @@ public class PlayerCTRL : MonoBehaviour {
 
 
 
-		float ForwardMove = Input.GetAxis("Vertical") * PlayerSpeed;
+		float ForwardMove = Input.GetAxis("Vertical") * MoveSpeed;
 		//Vector 3 that adds Jumping and FOrward Motion
 		Move = new Vector3(0,VerticalMove,ForwardMove);
 		//Setting Move independant of frame rate
 
 		VerticalMove -= Gravity * Time.deltaTime;
-		CharacterCTRL.Move(Move * Time.deltaTime);
+		CharacterCTRL.Move(moveDirection * Time.deltaTime);
 
-		transform.Rotate(0,Input.GetAxis("Horizontal") * RotationSpeed * Time.deltaTime,0);
+
 
 
 		
-
+		anim.SetFloat("Jump", VerticalMove);
 
 		//Animation Triggers
 		anim.SetFloat("Speed", ForwardMove); 
