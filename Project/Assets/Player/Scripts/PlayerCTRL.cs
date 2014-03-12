@@ -36,9 +36,6 @@ public class PlayerCTRL : MonoBehaviour {
 			VerticalMove = JumpSpeed;
 
 		}
-
-
-
 		/*
 		//Player Jump 
 		if(!CharacterCTRL.isGrounded)
@@ -68,6 +65,11 @@ public class PlayerCTRL : MonoBehaviour {
 		//Player Movement
 		//original
 		//Move = Input.GetAxis("Vertical") * transform.TransformDirection(Vector3.forward) * PlayerSpeed;	
+	
+
+
+
+
 		float ForwardMove = Input.GetAxis("Vertical") * PlayerSpeed;
 		//Vector 3 that adds Jumping and FOrward Motion
 		Move = new Vector3(0,VerticalMove,ForwardMove);
@@ -76,7 +78,7 @@ public class PlayerCTRL : MonoBehaviour {
 		VerticalMove -= Gravity * Time.deltaTime;
 		CharacterCTRL.Move(Move * Time.deltaTime);
 
-		transform.Rotate(new Vector3(0,Input.GetAxis("Horizontal")*RotationSpeed * Time.deltaTime,0));
+		transform.Rotate(0,Input.GetAxis("Horizontal") * RotationSpeed * Time.deltaTime,0);
 
 
 		
