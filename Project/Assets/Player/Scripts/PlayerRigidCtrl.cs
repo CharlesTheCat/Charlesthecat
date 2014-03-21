@@ -2,12 +2,12 @@
 using System.Collections;
 
 [RequireComponent (typeof (Rigidbody))]
-[RequireComponent(typeof(CapsuleCollider))]
+
 public class PlayerRigidCtrl : MonoBehaviour {
 
 	public float speed = 10.0f;
 	public float gravity = 10.0f;
-
+	public float Horizontal;
 	void Awake (){
 	
 	}
@@ -22,8 +22,22 @@ public class PlayerRigidCtrl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (Input.GetKey(KeyCode.W)){
+
+
+
+		if (Input.GetKey(KeyCode.W))
+		{
 			rigidbody.AddForce(0,0,speed); 
 		}
+
+
+		rigidbody.AddTorque (Vector3.up * 10 * Horizontal);
+
+		Horizontal = Input.GetAxis("Horizontal");
+		Debug.Log(Horizontal);
+	
 	}
+			
+
+
 }
